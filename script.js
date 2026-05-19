@@ -197,7 +197,7 @@ class ShoppingCart {
         `).join('');
 
         const total = this.cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-        totalEl.textContent = total.toFixed(2);
+        totalEl.textContent = `KSh ${total.toFixed(2)}`;
         checkoutBtn.disabled = false;
     }
 
